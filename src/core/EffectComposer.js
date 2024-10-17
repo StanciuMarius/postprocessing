@@ -426,7 +426,8 @@ export class EffectComposer {
 		const renderer = this.renderer;
 
 		const drawingBufferSize = renderer.getDrawingBufferSize(new Vector2());
-		const alpha = renderer.getContext().getContextAttributes().alpha;
+		console.log("yo");
+		const alpha = renderer.getContext().getContextAttributes()?.alpha;
 		const frameBufferType = this.inputBuffer.texture.type;
 
 		pass.setRenderer(renderer);
